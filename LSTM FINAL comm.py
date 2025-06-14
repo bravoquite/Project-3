@@ -137,7 +137,7 @@ for idx, (lat_min, lat_max) in enumerate(zones):
         loss.backward()
         opt.step()
         if ep % 10 == 0:
-            print(f"Strefa {lat_min}-{lat_max} - Epoch {ep}, Loss: {loss.item():.6f}")
+            print(f"Zone {lat_min}-{lat_max} - Epoch {ep}, Loss: {loss.item():.6f}")
     
     #predicting
     model.eval()
