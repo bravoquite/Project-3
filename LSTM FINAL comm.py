@@ -19,7 +19,7 @@ print("Using device:", device)
 
 results = []  #results for CSV
 
-ds = xr.open_dataset(r"C:\\Data\\gistemp250_GHCNv4.nc")
+ds = xr.open_dataset(r"C:\\Project-3\\gistemp250_GHCNv4.nc")
 
 zones = [
     (0, 22.5),
@@ -197,7 +197,7 @@ plt.show()
 #second part: comparison
 
 #loading data from CSV
-df = pd.read_csv(r"C:\Users\wdk33\temperature_predictions_1880_2050.csv")
+df = pd.read_csv(r"C:\\Project-3\\temperature_predictions_1880_2050.csv")
 
 #preparing data
 zones = df['zone'].unique()
